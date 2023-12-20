@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.library-hero {
+    width: 100%;
+    height: auto;
+    background-color: #e5e5e5;
+    padding-top: 100px;
+    display: flex;
+}
+
+.container form input {
+    padding: 8px 20px;
+    color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/* BOOK CARDS */
+
+.book-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    min-height: 180px;
+    gap: 40px;
+    margin-top: 50px;
+    padding-left: 70px;
+}
+
+.book-cards .one {
+    width: 280px;
+    height: 200px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid orange;
+    background: #3e3e3e !important;
+    cursor: pointer;
+    color: #fff;
+}
+
+.book-cards .card {
+    width: 280px;
+    height: 200px;
+    border: 3px solid orange;
+    background: #b9d7d5;
+}
