@@ -23,12 +23,21 @@
     background: #555;
 }
 
+.library {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4158d0;
+    background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+}
+
 .library-hero {
     width: 100%;
-    height: auto;
-    background-color: #e5e5e5;
+    height: 165px;
     padding-top: 100px;
     display: flex;
+    background-color: #4158d0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
 }
 
 .container form input {
@@ -72,4 +81,108 @@
     height: 200px;
     border: 3px solid orange;
     background: #b9d7d5;
+}
+
+.overlay {
+    width: 100%;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.506);
+    backdrop-filter: blur(2px);
+}
+
+.hidden {
+    display: flex;
+}
+
+.overlay>i {
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.overlay>i:active {
+    scale: .9;
+}
+
+.overlay .modal {
+    width: 600px;
+    height: 650px;
+    border-radius: 12px;
+    border: 5px solid orange;
+    background-color: #4158d0;
+    background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+/* MODAL FORM */
+
+.modal form {
+    line-height: 45px;
+}
+
+form .modal-form-title {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.modal form label {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.modal form input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    text-indent: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal form textarea {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    text-indent: 10px;
+    padding-top: 10px;
+    text-align: justify;
+    border-radius: 3px;
+    border: none;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal form select {
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal form button {
+    padding: 8px 40px;
+    margin-left: 200px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
 }
