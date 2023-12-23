@@ -28,6 +28,8 @@ function Library() {
         </div>
       </div>
 
+      {/* CARDS SECTION */}
+
       <main>
         <div className="library-main">
           <div className="container">
@@ -47,6 +49,8 @@ function Library() {
           </div>
         </div>
       </main>
+
+      {/* OVERLAY AND MODAL */}
 
       <div className={modal ? "overlay " : "overlay hidden"} id="overlay">
         <div className="modal">
